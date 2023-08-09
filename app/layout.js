@@ -1,19 +1,18 @@
+import { Footer, Header } from "@/components"
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: '옥찌 포트폴리오',
-  description: 'html5, css3, javascript, React.js, Next.js',
+  title: '원 페이지 포폴 사이트',
+  description: '페이지 작업 설명',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Header />
         {children}
         <Footer />

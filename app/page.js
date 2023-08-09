@@ -1,13 +1,15 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import MainPage from "./main/page"
+import { About, Career, Project, Skills, Visual } from "./sections"
 
-const Home = () => {
+export default function Home() {
   return (
-    <main id="container" className={styles.main}>
-      <MainPage />
+    <main id="container">
+      <Visual />
+      <About />
+      <Skills />
+      <Project />
+      {/* <Career /> */}
     </main>
-  );
-};
-
-export default Home;
+  )
+}
